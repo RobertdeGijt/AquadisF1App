@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>Username:</ion-label>
+            <ion-input type="text" [(ngModel)]='username'></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>Email:</ion-label>
+            <ion-input type="text" [(ngModel)]='email'></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>Password:</ion-label>
+            <ion-input type="password" [(ngModel)]='password'></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>Confirm:</ion-label>
+            <ion-input type="password" [(ngModel)]='confirmPassword'></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button block outline (click)="SignUp()">Sign Up</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
